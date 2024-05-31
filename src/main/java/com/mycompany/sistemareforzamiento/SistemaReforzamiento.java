@@ -10,5 +10,7 @@ public class SistemaReforzamiento {
       Principal p = new Principal();
        p.setVisible(true);
        p.setLocationRelativeTo(null);
+
+       //asdsdsd
     }
 }
