@@ -88,7 +88,6 @@ public class Controladora {
         return controlPersis.traercursos();
     }
 
-    
 
     public void guardar(String nom, String ho,String di, String li, String Ase) {
         Aula al = new Aula();

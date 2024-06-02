@@ -5,17 +5,18 @@
 package com.mycompany.sistemareforzamiento.igu;
 
 import com.mycompany.sistemareforzamiento.logica.Controladora;
+import com.mycompany.sistemareforzamiento.logica.Usuario;
 
 /**
  *
  * @author cisne
  */
 public class Principal extends javax.swing.JFrame {
-Controladora cont;
+Usuario cont;
     
     public Principal() {
         initComponents();
-        cont = new Controladora();
+        cont = new Usuario();
     }
 
     /**
@@ -167,7 +168,7 @@ Controladora cont;
         String contraseña = txtContraseña.getText();
         String mensaje = cont.validarUsuario(usuario,contraseña);
         txtmensaje.setText(mensaje);
-        cont.validarBien(usuario, contraseña);
+        cont.iniciarSesion(usuario, contraseña);
         if("Contraseña incorrecta.".equals(mensaje) || "Usuario no encontrado.".equals(mensaje)){
             
         }
